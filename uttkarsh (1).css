@@ -1,0 +1,294 @@
+/* css reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* css variables */
+
+:root {
+    --navheight: 45px;
+}
+
+
+/* Navigation bar styling */
+
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* background: grey; */
+}
+
+
+/* Navigation bar:: logo and image */
+
+
+/* #logo {
+    margin: 20px 20px;
+} */
+
+#logo img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+}
+
+
+/* Navigation bar:: list styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+#navbar ul li a {
+    /* border: 3px solid red; */
+    display: block;
+    padding: 10px 15px;
+    text-decoration:navajowhite;
+    color: rgb(3, 3, 3);
+    border-radius: 16px;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(216, 79, 79);
+}
+
+
+/* Home section */
+
+#home {
+    color: rgb(11, 236, 67);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 300px;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#home::before {
+    content: "";
+    background: url('http://www.ecns.cn/hd/2019/05/15/3377304ed4b140de9be951b8a4793adf.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+    opacity: 1;
+}
+
+#home h1 {
+    color: rgb(118, 250, 114);
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    
+}
+
+#home p {
+    font-size: 2rem;
+    font-family:'dancing script';
+    color: rgb(118, 250, 114);
+    
+}
+
+
+/* services class */
+
+#services {
+    margin: 20px 20px;
+    display: flex;
+    background-color:white;
+    /* flex-direction: column; */
+    /* flex-direction: column; */
+}
+
+#services .box {
+    border: 4px solid rgb(255 130 62);
+    padding: 20px;
+    margin: 10px 20px;
+    background-color:rgb(160, 209, 111);
+    border-radius: 5px;
+    flex-direction: coloum;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 200px;
+}
+
+
+/* clint sectio */
+
+#clint-section {
+    position: relative;
+    height: 315px;
+}
+
+#clint-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 308px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clints {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.clint-item {
+    padding: 50px;
+}
+
+#clints .clint-item {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    height: 150px;
+}
+
+#clints img {
+    border: 2px solid purple;
+    padding: 20px;
+    height: 150px;
+    display: flex;
+}
+
+
+/* forem section? */
+
+#contact {
+    position: relative;
+    height: 200px;
+    background-color: blue;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: rgb(106, 116, 50);
+    /* url('../img/bg1.jpg') no-repeat center center/cover;*/
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+#contact-section {
+    position: absolute;
+}
+
+#contact-box input {
+    width: 100%;
+    padding: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+
+/* #contact-box {} */
+
+#contact-box form {
+    width: 10%;
+    height: 200px;
+    padding: 50px;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgb(231, 14, 14);
+    color: rgb(7, 7, 7);
+    padding: 20px 15px;
+}
+
+
+/* Utility class */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 10px;
+    color: rgb(53, 7, 221);
+}
+
+.h1-primary {
+    font-size: 2.5rem;
+    color: rgb(118, 250, 114);
+   font-family: 'Baloo 2', cursive;
+}
+
+
+/* .h-secondary {
+
+} */
+
+.btn {
+    padding: 6px 20px;
+    background-color: rgba(76, 110, 47, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(16, 48, 231) ;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.button {
+    padding: 6px 20px;
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
